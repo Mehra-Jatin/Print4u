@@ -1,14 +1,15 @@
 import React from 'react';
-import './App.css';
 import { Navbar,ImageCard,Button} from './Components';
+import './App.css';
 import Lottie from "lottie-react";
 import shopping from "./shopping.json"
+import printmachine from "./printmachine.json"
 function App() {
   return (
     <div className="w-[100vw] h-[100%]">
     <Navbar />
 
-    {/* page 1 */}
+   {/* page 1 */}
     <div className='w-[100%] h-[650px]  flex items-center justify-center'>
      <div className='w-[70%] h-[650px] flex flex-col justify-center px-[200px]'>
       <p className='text-[60px] font-[700]'>Create and Sell</p>
@@ -25,21 +26,32 @@ function App() {
       <p className='font-[500] text-[#4B77BE] text-[15px] px-[10px]'>Trusted by over 8M sellers around the world</p>
     </div>
 
+   {/* page 1 gif */}
     <div className=' w-[30%] h-[400px] mr-[200px] flex items-center justify-center'>
       <Lottie className='w-[80%] ' animationData={shopping} />
     </div>
-     </div>
- {/* page 2 */}
-    <ul className='flex justify-center w-[100%] h-[500px]'>
+
+
+    </div>
+
+   {/* page 2 */}
+    <ul className='flex justify-center w-[100%] h-[500px] pl-[20px]'>
       <li><ImageCard heading="Higher Profits" desc="We offer some of the lowest prices in the industry because print providers continuously compete to win your business." src="higher-profits.svg" /></li>
       <li><ImageCard heading="Robust Scaling" desc="Easily handle peak holiday seasons, with our wide network of partners and automatic routing functionality." src="robust-scaling.svg" /></li>
       <li><ImageCard heading="Best Selection" desc="With 900+ products and top quality brands, you can choose the best products for your business." src="best-selection.svg" /></li>
       
     </ul>
 
-    {/* page 3 */}
-    <div className='w-[100%] h-[700px] bg-[#f7f7f7] flex items-center justify-center'>
-      <div className='w-[80%] h-[500px] bg-white rounded-md flex flex-col justify-center p-[50px]'>
+   {/* page 3 */}
+   <div className='w-[100%] h-[500px] bg-[#f7f7f7] flex items-center justify-center p-[200px]'>
+
+   {/* page 3 gif */}
+     <div  className=' w-[50%] h-[100%] mr-[200px] flex items-center justify-center'>
+      <Lottie className='w-[100%] '  animationData={printmachine} />
+     </div>
+
+    {/* page 3 text */}
+      <div className='w-[80%] h-[100%]  rounded-md flex flex-col justify-center p-[50px] jatin '>
         <p className='text-[30px] font-[500]'>Easily add your design to a</p>
         <p className='text-[30px] font-[500]'>wide range of products</p>
         <div className='py-[20px] text-[14px] text-[#afafaf]'>
@@ -50,19 +62,23 @@ function App() {
         <p className='text-[14px] font-[500] text-[#4B77BE]'>All Products ➡️</p>
       </div>
     </div>
+
+   
    
 
 
-    {/* page 4 */}
+   {/* page 4 */}
 
-  <ul className='flex justify-center w-[100%] h-[500px]'>
+  <ul className=' w-[100%] h-[500px] flex  items-center justify-evenly pl-[80px]'>
       <li><ImageCard heading="Custom products" desc="Easily add your designs to a wide range of products using our free tools" src="custom-products.webp" /></li>
-      <li><ImageCard heading="SELL on your terms" desc="You choose the products sale price and where to sell" src="your-products.webp" /></li>
-      <li><ImageCard heading="WE HANDLE fulfillment" desc="Once an order is placed we automatically hanle all the printing and delivery logistics" src="fullfillment.webp" /></li>
+      <li><ImageCard heading="SELL " desc="You choose the products sale price and where to sell" src="your-products.webp" /></li>
+      <li><ImageCard heading="WE HANDLE " desc="Once an order is placed we automatically handle all the printing and delivery logistics" src="fullfillment.webp" /></li>
       
   </ul>
 
-    </div>
+
+ {/*end */}
+ </div>
   );
 }
 

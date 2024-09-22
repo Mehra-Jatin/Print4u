@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar,ImageCard,Button} from './Components';
+import { Navbar,ImageCard,Button,Footer} from './Components';
 import './App.css';
 import Lottie from "lottie-react";
 import shopping from "./shopping.json"
@@ -77,6 +77,7 @@ function App() {
   </ul>
 
 
+ <Footer />
  {/*end */}
  </div>
   );

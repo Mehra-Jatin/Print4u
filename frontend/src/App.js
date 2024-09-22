@@ -43,10 +43,17 @@ function App() {
         <p className='text-[14px] font-[500] text-[#4B77BE]'>All Products ➡️</p>
       </div>
     </div>
+   
 
 
     {/* page 4 */}
 
+  <ul className='flex justify-center w-[100%] h-[500px]'>
+      <li><ImageCard heading="Custom products" desc="Easily add your designs to a wide range of products using our free tools" src="custom-products.webp" /></li>
+      <li><ImageCard heading="SELL on your terms" desc="You choose the products sale price and where to sell" src="your-products.webp" /></li>
+      <li><ImageCard heading="WE HANDLE fulfillment" desc="Once an order is placed we automatically hanle all the printing and delivery logistics" src="fullfillment.webp" /></li>
+      
+  </ul>
 
     </div>
   );

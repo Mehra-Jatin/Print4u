@@ -1,13 +1,16 @@
-
+import React from 'react';
 import './App.css';
 import { Navbar,ImageCard,Button} from './Components';
+import Lottie from "lottie-react";
+import shopping from "./shopping.json"
 function App() {
   return (
     <div className="w-[100vw] h-[100%]">
     <Navbar />
 
     {/* page 1 */}
-    <div className='w-[100%] h-[650px] flex flex-col justify-center px-[200px] '>
+    <div className='w-[100%] h-[650px]  flex items-center justify-center'>
+     <div className='w-[70%] h-[650px] flex flex-col justify-center px-[200px]'>
       <p className='text-[60px] font-[700]'>Create and Sell</p>
       <p className='text-[60px] font-[700]'>custom products</p>
       <ul className='font-[500] text-[#8f8f8f] py-[30px] px-[30px]'>
@@ -22,6 +25,10 @@ function App() {
       <p className='font-[500] text-[#4B77BE] text-[15px] px-[10px]'>Trusted by over 8M sellers around the world</p>
     </div>
 
+    <div className=' w-[30%] h-[400px] mr-[200px] flex items-center justify-center'>
+      <Lottie className='w-[80%] ' animationData={shopping} />
+    </div>
+     </div>
  {/* page 2 */}
     <ul className='flex justify-center w-[100%] h-[500px]'>
       <li><ImageCard heading="Higher Profits" desc="We offer some of the lowest prices in the industry because print providers continuously compete to win your business." src="higher-profits.svg" /></li>

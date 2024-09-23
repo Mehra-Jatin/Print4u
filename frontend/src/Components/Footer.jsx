@@ -1,8 +1,8 @@
 import React from "react";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-300 py-4">
+    <div className="bg-gray-800 text-gray-300 py-4">
       <div className="container mx-auto text-center">
         <p className="text-sm">
           2024 Print4u. All rights reserved.
@@ -13,8 +13,7 @@ const Footer = () => {
           <a href="#" className="text-gray-400 hover:text-white mx-2">Contact Us</a>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 
-export default Footer;

@@ -34,7 +34,7 @@ function App() {
 
     </div>
 
-   {/* page 2 */}
+    {/* page 2 */}
     <ul className='flex justify-center w-[100%] h-[500px] pl-[20px]'>
       <li><ImageCard heading="Higher Profits" desc="We offer some of the lowest prices in the industry because print providers continuously compete to win your business." src="higher-profits.svg" /></li>
       <li><ImageCard heading="Robust Scaling" desc="Easily handle peak holiday seasons, with our wide network of partners and automatic routing functionality." src="robust-scaling.svg" /></li>

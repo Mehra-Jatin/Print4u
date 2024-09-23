@@ -14,8 +14,8 @@ export default function Navbar() {
                 <li className="cursor-pointer">Use-Cases</li>
             </ul>
 
-            <ul className="px-2 lg:px-[20px] flex items-center space-x-2 lg:space-x-4">
-                <li className="cursor-pointer">
+            <ul className="px-2 lg:px-[20px] flex items-center">
+                <li className="cursor-pointer ">
                     <Button text="Log in" bg="white" fontcolor="black" />
                 </li>
                 <li className="cursor-pointer">

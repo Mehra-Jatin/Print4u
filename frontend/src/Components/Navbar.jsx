@@ -3,7 +3,7 @@ import Button from "./Utility/Button";
 
 export default function Navbar() {
     return (
-        <div className="px-4 lg:px-[120px] w-full h-[80px] shadow-sm shadow-[#d3d3d3] flex justify-between items-center text-[15px] lg:text-[17px] font-[500]">
+        <div className="px-20 lg:px-[120px] w-full h-[80px]  shadow-sm shadow-[#d3d3d3] flex justify-between items-center text-[15px] lg:text-[17px] font-[500]">
             <ul className="px-2 lg:px-[50px] text-[#4B77BE]">
                 <li className="text-[25px] lg:text-[40px] font-bold">Print4u</li>
             </ul>
